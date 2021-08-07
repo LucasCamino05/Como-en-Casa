@@ -79,11 +79,16 @@ section{
     align-items: end;
 }
 .carousel{
-    padding: 50px;
+    padding: 1rem;
 }
 .carousel-item img{
-    height: 35rem;
+    height: 36rem;
     width: 100%;
     z-index: auto;
 }
 /* Fin Index */
+/* Menu */
+.productos{
+    display: flex;
+    flex-wrap: wrap;
+}
