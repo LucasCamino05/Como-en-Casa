@@ -1,0 +1,76 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(../Multimedia/Fuentes/Montserrat-Black.ttf),
+        url(../Multimedia/Fuentes/Montserrat-BlackItalic.ttf),
+        url(../Multimedia/Fuentes/Montserrat-Bold.ttf),
+        url(../Multimedia/Fuentes/Montserrat-BoldItalic.ttf),
+        url(../Multimedia/Fuentes/Montserrat-ExtraBold.ttf),
+        url(../Multimedia/Fuentes/Montserrat-ExtraBoldItalic.ttf),
+        url(../Multimedia/Fuentes/Montserrat-ExtraLight.ttf),
+        url(../Multimedia/Fuentes/Montserrat-ExtraLightItalic.ttf),
+        url(../Multimedia/Fuentes/Montserrat-Italic.ttf),
+        url(../Multimedia/Fuentes/Montserrat-Light.ttf),
+        url(../Multimedia/Fuentes/Montserrat-LightItalic.ttf),
+        url(../Multimedia/Fuentes/Montserrat-Medium.ttf),
+        url(../Multimedia/Fuentes/Montserrat-MediumItalic.ttf),
+        url(../Multimedia/Fuentes/Montserrat-Regular.ttf),
+        url(../Multimedia/Fuentes/Montserrat-SemiBold.ttf),
+        url(../Multimedia/Fuentes/Montserrat-SemiBoldItalic.ttf),
+        url(../Multimedia/Fuentes/Montserrat-Thin.ttf),
+        url(../Multimedia/Fuentes/Montserrat-ThinItalic.ttf);
+}
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: white;
+}
+.topbar{
+    position: fixed;    
+    width: 100%;
+    margin: 0;
+    z-index: 1;
+}
+.topbar__list{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid;
+    border-radius: 5rem;
+    background-color: white;
+    height: 100px;
+}
+/* Sacamos los estilos de la tabla y a, tambien tocamos la imagen */
+.topbar__list{
+    list-style: none;
+}
+.topbar__list a{
+    text-decoration: none;
+    color: black;
+}
+.topbar__list a:hover{
+    color: red;
+}
+.topbar__logo img{
+
+    width: 225px;
+    height: 125px;
+}
+.topbar__seccion:hover{
+    font-size: 125%;
+}
+section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: end;
+}
+.carousel{
+    padding: 50px;
+}
+.carousel-item img{
+    height: 35rem;
+    width: 100%;
+    z-index: auto;
+}

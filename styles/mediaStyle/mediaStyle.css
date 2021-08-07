@@ -1,0 +1,11 @@
+@media screen and (max-width: 768px) {
+    nav{
+        display: none;
+    }
+    .inicioIndex__logotipo{
+        display: none;
+    }
+    .combo4__Mobile{
+        display: none;
+    }
+}
