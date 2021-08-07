@@ -170,6 +170,6 @@ form{
     align-items: center;
 }
 .quienesSomos img{
-    width: fit-content;
-    height: 30rem;
+    width: 40rem;
+    height: fit-content;
 }
