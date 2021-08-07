@@ -85,6 +85,16 @@ section{
     width: 100%;
     z-index: auto;
 }
+.promos{
+    padding: 125px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.promos img{
+    border-radius: 10rem;
+    width: 30rem;
+    height: 20rem;
+}
 /* Fin Index */
 /* Menu */
 .productos{
@@ -92,19 +102,60 @@ section{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    background-color: beige;
 }
 .productos img{
     border-radius: 10rem;
     width: 30rem;
     height: 20rem;
 }
+.productos img:hover{
+    border-radius: 10rem;
+    width: 31rem;
+    height: 21rem;
+}
 .productos__boton{
+    padding: 1.5rem;
     display: flex;
     flex-direction: column;
 }
 /* Fin Menu */
+/* Preguntas Frecuentes */
+.preguntas{
+    padding: 10rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: beige;
+}
+.preguntas__mapa{
+    border: 3px solid;
+}
+.preguntas__preguntasFrecuentes{
+    display: flex;
+    flex-direction: column;
+}
+/* Fin Contacto */
 /* Contacto */
 form{
     padding-top: 100px;
     text-align: center;
+    background-color: beige;
+}
+/* Fin Contacto */
+/* Quienes Somos */
+.quienesSomos{
+    padding: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: beige;
+}
+.quienesSomos__nosotros{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.quienesSomos img{
+    width: fit-content;
+    height: 30rem;
 }
