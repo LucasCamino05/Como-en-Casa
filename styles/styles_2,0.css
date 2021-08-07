@@ -27,6 +27,7 @@ body{
     box-sizing: border-box;
     background-color: white;
 }
+/* Estilos Generales */
 .topbar{
     position: fixed;    
     width: 100%;
@@ -61,6 +62,17 @@ body{
 .topbar__seccion:hover{
     font-size: 125%;
 }
+footer ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+footer img{
+    width: 24px;
+    height: 24px;
+}
+/* Fin Estilos Generales */
+/* Index */
 section{
     display: flex;
     justify-content: space-evenly;
@@ -74,3 +86,4 @@ section{
     width: 100%;
     z-index: auto;
 }
+/* Fin Index */
