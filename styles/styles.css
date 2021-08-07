@@ -70,6 +70,20 @@ footer img{
     width: 24px;
     height: 24px;
 }
+h2{
+    text-decoration: 2px underline;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+h3{
+    font-size: large;
+    font-weight: bold;
+}
+h4{
+    font-size: large;
+    font-weight: bold;
+    text-decoration: underline;
+}
 /* Fin Estilos Generales */
 /* Index */
 section{
