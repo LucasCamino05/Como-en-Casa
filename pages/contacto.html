@@ -4,117 +4,114 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+    <link type="text/css" rel="stylesheet" href="../styles/styles_2,0.css">
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <title>Contacto | Como en casa</title>
 </head>
-<body>
-    <div class="fondoContacto">
-        <nav class="topbar">
-            <div class="topbar__logo">
-                <img src="../Multimedia/Logo/Diseño_sin_título-removebg-preview.png" alt="">
+<body class="contactoCuerpo">
+    <nav class="topbar">
+        <ul class="topbar__list">
+            <li>
+                <div class="topbar__logo">
+                    <img src="../Multimedia/Logo/Diseño_sin_título-removebg-preview.png" alt="">
+                </div>
+            </li>
+            <li>
+                <div class="topbar__seccion">
+                    <a href="../index.html" class=""><i class='bx bx-home' ></i>Inicio</a>
+                </div>
+            </li>
+            <li>
+                <div class="topbar__seccion">
+                <a href="../pages/menu.html" class=""><i class='bx bx-food-menu'></i>Menu</a>    
+                </div>
+            </li>
+            <li>
+                <div class="topbar__seccion">
+                    <a href="../pages/quienes_somos.html" class=""><i class='bx bxs-user-circle'></i>Quienes Somos</a>    
+                </div>
+            </li>
+            <li>
+                <div class="topbar__seccion">
+                    <a href="../pages/preg_frecuentes.html" class=""><i class='bx bx-question-mark' ></i>Preguntas Frecuentes</a>
+                </div>
+            </li>
+            <li>
+                <div class="topbar__seccion">
+                    <a href="../pages/contacto.html" class=""><i class='bx bxs-comment-detail'></i>Contacto</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <form class="formulario">
+        <h2>Contacto</h2>  <!-- Titulo de la sección en la que nos encontramos -->
+        <h3>Completa tus datos!</h3>
+        <div>
+            <div><!-- Pregunta sobre nombre y lugar para completarlo -->
+                <label for="Nombre">Nombre Completo</label> 
+                <br>
+                <input type="text" name="Nombre">
             </div>
-            <ul class="topbar__list">
-                <li>
-                    <div class="topbar__home">
-                        <a href="../index.html" class=""><i class='bx bx-home' ></i>Inicio</a>
-                    </div>
-                </li>
-                <li>
-                    <div class="topbar__menu">
-                    <a href="menu.html" class=""><i class='bx bx-food-menu'></i>Menu</a>    
-                    </div>
-                </li>
-                <li>
-                    <div class="topbar__quienesSomos">
-                        <a href="quienes_somos.html" class=""><i class='bx bxs-user-circle'></i>Quienes Somos</a>    
-                    </div>
-                </li>
-                <li>
-                    <div class="topbar__preguntasFrecuentes">
-                        <a href="preg_frecuentes.html" class=""><i class='bx bx-question-mark' ></i>Preguntas Frecuentes</a>
-                    </div>
-                </li>
-                <li>
-                    <div class="topbar__contacto">
-                        <a href="contacto.html" class=""><i class='bx bxs-comment-detail'></i>Contacto</a>
-                    </div>
-                </li>
-            </ul>
-        </nav>
-        <header class="contacto__inicioIndex__logotipo"><!-- Clase igual a la del index, ya que debe ser igual al logo del index. -->
-            <img src="../Multimedia/Logo/Logo_final.png" alt="Img Not found"> <!-- Logo del Emprendimiento -->
-        </header>
-        <form class="formulario">
-            <h2>Contacto</h2>  <!-- Titulo de la sección en la que nos encontramos -->
-            <h3>Completa tus datos!</h3>
+            <div><!-- Pregunta sobre la Edad que tiene el postulante -->
+                <label for="Edad">Edad</label>
+                <br>
+                <input type="number" name="Edad">
+            </div>
+            <div><!-- email de contacto con el postulante -->
+                <label for="Email">Email de contacto</label>
+                <br>
+                <input type="email" name="Email">
+            </div>
+            <div><!-- Numero de telefono para contacto -->
+                <label for="Numero-telefono">Numero de contacto</label>
+                <br>
+                <input type="text/number" name="Numero-telefono">
+            </div>
+            <div><!-- horarios que dispone -->
+                <label for="Horario">Disponibilidad horaria</label>
+                <br>
+                <select>
+                    <option value="Full Time">Tiempo Completo</option>
+                    <option value="Part Time">Medio tiempo</option>
+                </select>
+            </div>
+            <div><!-- Puesto que quiere  -->
+                <label for="Trabajo">Puesto a postular</label>
+                <br>
+                <label for="Camarero">Camarero</label>
+                <input type="radio" name="Trabajo" id="Camarero" value="Camarero">
+                <label for="Mozo">Mozo</label>
+                <input type="radio" name="Trabajo" id="Moso" value="Mozo"    >
+                <br>
+                <label for="Bacha">Bacha</label>
+                <input type="radio" name="Trabajo" id="Bacha" value="Bacha">    
+                <label for="Chef">Cocinero</label>
+                <input type="radio" name="Trabajo" id="Chef" value="Chef">
+            </div>
+            <div><!-- Una breve descripcion sobre el -->
+                <label for="Descripcion">Contanos sobre vos</label>
+                <br>
+                <textarea name="Descripcion" cols="30" rows="10"></textarea>
+            </div>
+            <div><!-- Situacion imaginaria -->
+                <label for="Situacion">Suponiendo una situacion que haria</label>
+                <br>    
+                <textarea name="Situacion" cols="30" rows="10">Cuando ha tenido clientes que la tratan de forma prepotente o inadecuada, cómo lo ha tomado y cuál ha sido su forma de actuar frente a eso</textarea>
+            </div>
             <div>
-                <div><!-- Pregunta sobre nombre y lugar para completarlo -->
-                    <label for="Nombre">Nombre Completo</label> 
-                    <br>
-                    <input type="text" name="Nombre">
-                </div>
-                <div><!-- Pregunta sobre la Edad que tiene el postulante -->
-                    <label for="Edad">Edad</label>
-                    <br>
-                    <input type="number" name="Edad">
-                </div>
-                <div><!-- email de contacto con el postulante -->
-                    <label for="Email">Email de contacto</label>
-                    <br>
-                    <input type="email" name="Email">
-                </div>
-                <div><!-- Numero de telefono para contacto -->
-                    <label for="Numero-telefono">Numero de contacto</label>
-                    <br>
-                    <input type="text/number" name="Numero-telefono">
-                </div>
-                <div><!-- horarios que dispone -->
-                    <label for="Horario">Disponibilidad horaria</label>
-                    <br>
-                    <select>
-                        <option value="Full Time">Tiempo Completo</option>
-                        <option value="Part Time">Medio tiempo</option>
-                    </select>
-                </div>
-                <div><!-- Puesto que quiere  -->
-                    <label for="Trabajo">Puesto a postular</label>
-                    <br>
-                    <label for="Camarero">Camarero</label>
-                    <input type="radio" name="Trabajo" id="Camarero" value="Camarero">
-                    <label for="Mozo">Mozo</label>
-                    <input type="radio" name="Trabajo" id="Moso" value="Mozo"    >
-                    <br>
-                    <label for="Bacha">Bacha</label>
-                    <input type="radio" name="Trabajo" id="Bacha" value="Bacha">    
-                    <label for="Chef">Cocinero</label>
-                    <input type="radio" name="Trabajo" id="Chef" value="Chef">
-                </div>
-                <div><!-- Una breve descripcion sobre el -->
-                    <label for="Descripcion">Contanos sobre vos</label>
-                    <br>
-                    <textarea name="Descripcion" cols="30" rows="10"></textarea>
-                </div>
-                <div><!-- Situacion imaginaria -->
-                    <label for="Situacion">Suponiendo una situacion que haria</label>
-                    <br>    
-                    <textarea name="Situacion" cols="30" rows="10">Cuando ha tenido clientes que la tratan de forma prepotente o inadecuada, cómo lo ha tomado y cuál ha sido su forma de actuar frente a eso</textarea>
-                </div>
-                <div>
-                    <label for="Listo">Enviar</label>
-                    <input type="submit" name="Listo">
-                </div>
+                <label for="Listo">Enviar</label>
+                <input type="submit" name="Listo">
             </div>
-        </form>
-    </div>
+        </div>
+    </form>
     <footer>
-        <ul class="redes">
-            <li>Nuestras redes!</li>
-            <li><a href="" class="redes__estilo"><img src="../Multimedia/Imagenes/instagram_final.png" alt="Instagram">Instagram</a></li>
-            <li><a href="" class="redes__estilo"><img src="../Multimedia/Imagenes/facebook_final.png" alt="Facebook">Facebook</a></li>
-            <li><a href="" class="redes__estilo"><img src="../Multimedia/Imagenes/whatsapp_final.png" alt="Whatsapp">Whatsapp</a></li>
-            <li><a href="" class="redes__estilo">PedidosYa</a></li>
-        </ul>    
-    </footer>    
+        <ul>
+            <li>Nuestras Redes!</li>
+            <li><i class='bx bxl-facebook-circle' ></i>Facebook</li>
+            <li><i class='bx bxl-instagram'>Instagram</li>
+            <li><i class='bx bxl-whatsapp' ></i></i>2266489025</li>
+            <li>PedidosYa</a></li>
+        </ul>
+    </footer>
 </body>
 </html>

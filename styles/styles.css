@@ -297,10 +297,12 @@ Estoy buscando como poder aplicar esto a mi html y css. Es mi navegador en forma
 .fondoContacto{
     background-image: url(../Multimedia/Imagenes/fondo_contacto_1.jpg); /*esta imagen no es la final, sigo buscando */
     background-size: cover;   
+    margin-top: 100px;
 }
 .contacto{
     margin-left: auto;
     margin-right: auto;
+    margin-top: 100px;
 }
 .formulario{
     font-weight: bolder;
@@ -312,15 +314,18 @@ Estoy buscando como poder aplicar esto a mi html y css. Es mi navegador en forma
     background-color: #ce661c;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 100px;
     text-align: center;
     padding: 15px;
 }/*Recuadro que contiene el formulario*/
 .formulario h2 {
+    
     text-decoration: 2px underline;
     font-size: xx-large;
     font-weight: bolder;
 }
 .formulario h3 { 
+    
     text-decoration: 2px underline;
 }
 /* Fin Estilos contacto */

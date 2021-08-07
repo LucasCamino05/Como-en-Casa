@@ -55,7 +55,6 @@ body{
     color: red;
 }
 .topbar__logo img{
-
     width: 225px;
     height: 125px;
 }
@@ -89,6 +88,23 @@ section{
 /* Fin Index */
 /* Menu */
 .productos{
+    padding: 125px;
     display: flex;
+    justify-content: space-evenly;
     flex-wrap: wrap;
+}
+.productos img{
+    border-radius: 10rem;
+    width: 30rem;
+    height: 20rem;
+}
+.productos__boton{
+    display: flex;
+    flex-direction: column;
+}
+/* Fin Menu */
+/* Contacto */
+form{
+    padding-top: 100px;
+    text-align: center;
 }
