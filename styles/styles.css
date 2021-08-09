@@ -91,7 +91,6 @@ h4{
 section{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
 }
 .carousel{
     padding: 1rem;
