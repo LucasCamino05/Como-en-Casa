@@ -88,8 +88,8 @@ h4{
 /* Index */
 section{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
-    align-items: end;
 }
 .carousel{
     padding: 1rem;
