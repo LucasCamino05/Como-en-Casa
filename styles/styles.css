@@ -184,7 +184,7 @@ form{
 .foto__croqueta{
     grid-area: cocina;
 }
-form img{
+.form__foto img{
     width: fit-content;
     height: 25rem;
     padding-left: 2rem;
