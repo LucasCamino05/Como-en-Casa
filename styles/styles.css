@@ -166,14 +166,28 @@ h4{
 /* Contacto */
 form{
     padding-top: 150px;
-    text-align: center;
+    padding-left: 2rem;
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
 }
 .formularios__textos{
     display: flex;
     flex-direction: column;
+}
+.form__foto{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+        "foto ."
+        ". cocina";
+}
+.foto__croqueta{
+    grid-area: cocina;
+}
+form img{
+    width: fit-content;
+    height: 25rem;
+    padding-left: 2rem;
 }
 /* Fin Contacto */
 /* Quienes Somos */
