@@ -63,6 +63,12 @@ body{
     -ms-transform: scale(1.2);
     transform: scale(1.2);  
 }
+footer{
+    margin-bottom: 0;
+    padding: 1rem;
+    background-color: black;
+    color: white;
+}
 footer ul{
     display: flex;
     justify-content: space-evenly;
@@ -97,7 +103,7 @@ h4{
     z-index: auto;
 }
 .promos{
-    padding: 125px;
+    padding-top: 125px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -120,7 +126,7 @@ h4{
 /* Fin Index */
 /* Menu */
 .productos{
-    padding: 125px;
+    padding-top: 125px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -154,6 +160,7 @@ h4{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    height: 35.4rem;
 }
 .preguntas__mapa{
     border: 3px solid;
@@ -195,6 +202,7 @@ form{
     padding: 150px;
     display: flex;
     justify-content: space-evenly;
+    height: 36.65rem;
 }
 .quienesSomos__nosotros{
     display: flex;
