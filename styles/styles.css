@@ -25,7 +25,7 @@ body{
     width: 100%;
     height: 100%;
     box-sizing: border-box;
-    background-color: white;
+    background-color: beige;
 }
 /* Estilos Generales */
 .topbar{
@@ -88,10 +88,6 @@ h4{
 }
 /* Fin Estilos Generales */
 /* Index */
-section{
-    display: flex;
-    flex-wrap: wrap;
-}
 .carousel{
     padding: 1rem;
 }
@@ -104,6 +100,7 @@ section{
     padding: 125px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 .promos article{
     display: flex;
@@ -127,7 +124,6 @@ section{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    background-color: beige;
 }
 .productos img{
     border-radius: 10rem;
@@ -144,7 +140,7 @@ section{
     flex-direction: column;
     align-items: center;
 }
-.productos__boton{
+.boton{
     padding: 2rem;
     display: flex;
     align-items: center;
@@ -158,7 +154,6 @@ section{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: beige;
 }
 .preguntas__mapa{
     border: 3px solid;
@@ -170,9 +165,15 @@ section{
 /* Fin Contacto */
 /* Contacto */
 form{
-    padding-top: 100px;
+    padding-top: 150px;
     text-align: center;
-    background-color: beige;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.formularios__textos{
+    display: flex;
+    flex-direction: column;
 }
 /* Fin Contacto */
 /* Quienes Somos */
@@ -180,7 +181,6 @@ form{
     padding: 150px;
     display: flex;
     justify-content: space-evenly;
-    background-color: beige;
 }
 .quienesSomos__nosotros{
     display: flex;
