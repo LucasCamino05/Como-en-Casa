@@ -29,7 +29,7 @@ body{
 }
 /* Estilos Generales */
 .topbar{
-    position: fixed;    
+    position: fixed; 
     width: 100%;
     margin: 0;
     z-index: 1;
@@ -66,6 +66,7 @@ body{
 footer{
     margin-bottom: 0;
     padding: 1rem;
+    width: 100%;
     background-color: black;
     color: white;
 }
@@ -73,10 +74,6 @@ footer ul{
     display: flex;
     justify-content: space-evenly;
     list-style: none;
-}
-footer img{
-    width: 24px;
-    height: 24px;
 }
 h2{
     text-decoration: 2px underline;
@@ -94,13 +91,13 @@ h4{
 }
 /* Fin Estilos Generales */
 /* Index */
-.carousel{
-    padding: 1rem;
-}
 .carousel-item img{
     height: 36rem;
     width: 100%;
     z-index: auto;
+}
+.carousel-item{
+    transition: transform .4s ease-in-out;
 }
 .promos{
     padding-top: 125px;
@@ -122,6 +119,25 @@ h4{
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
     transform: scale(1.2);      
+}
+@media screen and (max-width:768px) {
+    .carousel-item img{
+        width: 100%;
+        height: 21rem;
+    }
+    .topbar__logo{
+        display: none;
+    }
+    .topbar__list{
+        /* display: flex;
+        flex-direction: column; */
+    }
+    footer ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
 }
 /* Fin Index */
 /* Menu */

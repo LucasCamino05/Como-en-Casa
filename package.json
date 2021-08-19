@@ -1,0 +1,23 @@
+{
+  "name": "sass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LucasCamino05/Como-en-Casa.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LucasCamino05/Como-en-Casa/issues"
+  },
+  "homepage": "https://github.com/LucasCamino05/Como-en-Casa#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.12"
+  }
+}
