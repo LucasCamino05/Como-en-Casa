@@ -125,12 +125,19 @@ h4{
         width: 100%;
         height: 21rem;
     }
+    .topbar{
+        position: absolute;
+    }
     .topbar__logo{
         display: none;
     }
     .topbar__list{
-        /* display: flex;
-        flex-direction: column; */
+        display: flex;
+        border: 1px solid;
+        border-radius: 2rem;
+    }
+    .topbar__list a:hover{
+        color: red;
     }
     footer ul{
         display: flex;
