@@ -5,53 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
-    <link type="text/css" rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">    <link type="text/css" rel="stylesheet" href="../css/styles.css">
     <title>Quienes somos | Como en casa</title>
 </head>
 <body>
-    <nav class="topbar">
-        <ul class="topbar__list">
-            <li>
-                <div class="topbar__logo">
-                    <img src="../Multimedia/Logo/Diseño_sin_título-removebg-preview.png" alt="">
-                </div>
-            </li>
-            <li>
-                <div class="topbar__seccion">
-                    <a href="../index.html" class=""><i class='bx bx-home' ></i>Inicio</a>
-                </div>
-            </li>
-            <li>
-                <div class="topbar__seccion">
-                <a href="../pages/menu.html" class=""><i class='bx bx-food-menu'></i>Menu</a>    
-                </div>
-            </li>
-            <li>
-                <div class="topbar__seccion">
-                    <a href="../pages/quienes_somos.html" class=""><i class='bx bxs-user-circle'></i>Quienes Somos</a>    
-                </div>
-            </li>
-            <li>
-                <div class="topbar__seccion">
-                    <a href="../pages/preg_frecuentes.html" class=""><i class='bx bx-question-mark' ></i>Preguntas Frecuentes</a>
-                </div>
-            </li>
-            <li>
-                <div class="topbar__seccion">
-                    <a href="../pages/contacto.html" class=""><i class='bx bxs-comment-detail'></i>Contacto</a>
-                </div>
-            </li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Como en Casa</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Inicio<span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-item nav-link active" href="/pages/quienes_somos.html">Quienes somos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/menu.html">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/preg_frecuentes.html">Preguntas frecuentes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </div>
     </nav>
     <main>
         <section class="quienesSomos">
-            <div class="quienesSomos__nosotros">
+            <div class="nosotros">
                 <h2>Quienes somos</h2> <!-- Titulo de la sección en la que nos encontramos -->
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus, necessitatibus qui harum nam eaque natus quaerat omnis officia, cum nulla quisquam aspernatur neque! Deserunt officia iure reprehenderit aut, consectetur laudantium!</p><!-- Una breve descripcion de quienes somos como empresa. -->
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente aperiam, dolor eius minima consectetur molestiae debitis ut placeat fugiat unde in at rem delectus. Eum deserunt minima repudiandae tenetur cupiditate?</p><!-- texto de relleno ya que no se que escribir por el momento. -->
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, aperiam inventore amet earum molestiae pariatur doloremque culpa incidunt. Quam neque quo, quisquam id quia aspernatur beatae illo distinctio ipsa debitis?</p>
             </div>
-            <div class="quienesSomos__lugar">
+            <div class="lugar">
                 <img src="../Multimedia/Imagenes/lugarAdentro.jpg" alt="Img not found">
             </div>
         </section>
@@ -65,5 +56,8 @@
             <li>PedidosYa</li>
         </ul>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>

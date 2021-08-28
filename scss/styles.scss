@@ -1,23 +1,24 @@
-@font-face {
-    font-family: Montserrat;
-    src: url(../Multimedia/Fuentes/Montserrat-Black.ttf),
-        url(../Multimedia/Fuentes/Montserrat-BlackItalic.ttf),
-        url(../Multimedia/Fuentes/Montserrat-Bold.ttf),
-        url(../Multimedia/Fuentes/Montserrat-BoldItalic.ttf),
-        url(../Multimedia/Fuentes/Montserrat-ExtraBold.ttf),
-        url(../Multimedia/Fuentes/Montserrat-ExtraBoldItalic.ttf),
-        url(../Multimedia/Fuentes/Montserrat-ExtraLight.ttf),
-        url(../Multimedia/Fuentes/Montserrat-ExtraLightItalic.ttf),
-        url(../Multimedia/Fuentes/Montserrat-Italic.ttf),
-        url(../Multimedia/Fuentes/Montserrat-Light.ttf),
-        url(../Multimedia/Fuentes/Montserrat-LightItalic.ttf),
-        url(../Multimedia/Fuentes/Montserrat-Medium.ttf),
-        url(../Multimedia/Fuentes/Montserrat-MediumItalic.ttf),
-        url(../Multimedia/Fuentes/Montserrat-Regular.ttf),
-        url(../Multimedia/Fuentes/Montserrat-SemiBold.ttf),
-        url(../Multimedia/Fuentes/Montserrat-SemiBoldItalic.ttf),
-        url(../Multimedia/Fuentes/Montserrat-Thin.ttf),
-        url(../Multimedia/Fuentes/Montserrat-ThinItalic.ttf);
+
+@import "_variables";
+
+@media screen and (max-width: 768px){
+    footer{
+        display: none;
+    }
+    .preguntas{
+        padding-top: 75px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .btn{
+            background-color: black;
+            width: 100%;
+        }
+        .mapa{
+            border: 3px solid;  
+            width: 100%;  
+        }
+    }
 }
 body{
     margin: 0;
@@ -27,41 +28,13 @@ body{
     box-sizing: border-box;
     background-color: beige;
 }
-/* Estilos Generales */
-.topbar{
-    position: fixed; 
+.navbar{
+    position: fixed;
     width: 100%;
-    margin: 0;
     z-index: 1;
-}
-.topbar__list{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    border: 1px solid;
-    border-radius: 5rem;
-    background-color: white;
-    height: 100px;
-}
-/* Sacamos los estilos de la tabla y a, tambien tocamos la imagen */
-.topbar__list{
-    list-style: none;
-}
-.topbar__list a{
-    text-decoration: none;
-    color: black;
-}
-.topbar__list a:hover{
-    color: red;
-}
-.topbar__logo img{
-    width: 225px;
-    height: 125px;
-}
-.topbar__seccion:hover{
-    -webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.2);  
+    align-content: center;
+    justify-items: center;
+
 }
 footer{
     position: fixed;
@@ -70,174 +43,148 @@ footer{
     color: white;
     padding: 10px;
     background-color: black;
+    ul{
+        display: flex;
+        justify-content: space-evenly;
+        list-style: none;
+    }
+}
 
+/* Inicio */
+
+.carousel{
+    img{
+        height: 40rem;
+    }
 }
-footer ul{
-    display: flex;
-    justify-content: space-evenly;
-    list-style: none;
-}
-h2{
-    text-decoration: 2px underline;
-    font-size: xx-large;
-    font-weight: bolder;
-}
-h3{
-    font-size: large;
-    font-weight: bold;
-}
-h4{
-    font-size: large;
-    font-weight: bold;
-    text-decoration: underline;
-}
-/* Fin Estilos Generales */
-/* Index */
-.carousel-item img{
-    height: 36rem;
-    width: 100%;
-    z-index: auto;
-}
-.carousel-item{
-    transition: transform .4s ease-in-out;
-}
-.promos{
-    padding-top: 125px;
+.combos{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-.promos article{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.promos img{
-    border-radius: 10rem;
-    width: 30rem;
-    height: 20rem;
-}
-.promos img:hover{
-    -webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.2);      
-}
-@media screen and (max-width:768px) {
-    .carousel-item img{
-        width: 100%;
-        height: 21rem;
-    }
-    .topbar{
-        position: absolute;
-    }
-    .topbar__logo{
-        display: none;
-    }
-    .topbar__list{
-        display: flex;
-        border: 1px solid;
-        border-radius: 2rem;
-    }
-    .topbar__list a:hover{
-        color: red;
-    }
-    footer ul{
+    justify-content: space-between;
+    padding: $padding_combo;
+    article{
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
         align-items: center;
+        .circulo{
+            border: 1px solid;
+            border-radius: 10rem;
+        }
+        img{
+            width: 100%;
+            height: $altoComida;
+        }
     }
-    
 }
-/* Fin Index */
+
 /* Menu */
+
 .productos{
-    padding-top: 125px;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-}
-.productos img{
-    border-radius: 10rem;
-    width: 30rem;
-    height: 20rem;
-}
-.productos img:hover{
-    -webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.2);
-}
-.productos__texto{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.boton{
-    padding: 2rem;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-}
-/* Fin Menu */
-/* Preguntas Frecuentes */
-.preguntas{
-    height: 35.4rem;
-    padding: 10rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: end;
-}
-.btn-primary{
-    background-color: black;
-}
-.preguntas__mapa{
-    border: 3px solid;
-}
-.preguntas__preguntasFrecuentes{
-    display: flex;
-    flex-direction: column;
-}
-/* Fin Contacto */
-/* Contacto */
-form{
-    padding-top: 150px;
-    padding-left: 2rem;
-    display: flex;
-    height: 60rem;
-}
-.formularios__textos{
-    display: flex;
-    flex-direction: column;
-}
-.form__foto{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas:
-        "foto ."
-        ". cocina";
-}
-.foto__croqueta{
-    grid-area: cocina;
-}
-.form__foto img{
-    width: fit-content;
-    height: 18rem;
-}
-/* Fin Contacto */
-/* Quienes Somos */
-.quienesSomos{
-    padding: 150px;
-    display: flex;
     justify-content: space-evenly;
-    height: 36.65rem;
+    padding: $padding_menu;
+    article{
+        text-align: center;
+        div{
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    img{
+        border: 1px solid;
+        border-radius: 10rem;
+        width: $anchoComida;
+        height: $altoComida;
+        transition: 0.4s;
+        transition-timing-function: linear;
+    }
+    img:hover {
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2); }
 }
-.quienesSomos__nosotros{
+/* botones de agregar al carrito */
+button{
+    background-color:black;
+    border: 0;
+    border-radius:5px;
+    box-shadow:0 2px 4px rgba(0, 0, 0, 1);
+    color: white;
+    font-size:1rem;
+    padding:10px 25px;
+    }
+  .model-container{
+    opacity:0;
+    pointer-events: none;
+    background-color:rgba(0,0,0,0.3);
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    position:fixed;
+    top:0;
+    left:0;
+    height: 100vh;
+    width:100vw;
+   }
+  .model-container.show{
+    pointer-events: auto;
+    opacity:1;
+    }
+  .modal{
+    background-color: #fff;
+    padding:30px;
+    border-radius:5px;
+    box-shadow:0 2px 4px rgba(0, 0, 0, 1);
+    width:600px;
+    max-width:100%;
+    text-align:center;
+    }
+  .modal h1{
+    margin:0;
+    }
+  .modal p{
+    font-size:14px;
+    }
+/* los botones no funcionan, hice exactamente lo mismo que en el video que me pasaste y no logre hacer que funcione */
+/* Fin de boton agregar al carrito */
+/* preguntas */
+
+.preguntas{
+    padding-top: 75px;
+    display: flex;
+    justify-content: space-around;
+    .btn{
+        background-color: black;
+        width: 400px;
+    }
+    .mapa{
+        border: 3px solid;    
+    }
 }
-.quienesSomos img{
-    width: 40rem;
-    height: fit-content;
+
+/* Quienes Somos */
+
+.quienesSomos{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    padding: $padding_menu;
+    .nosotros{
+        text-align: center;
+        border: 1px solid;
+        width: 900px;
+    }
+    .lugar{
+        border: 2px solid;
+        padding: 0;
+        margin: 0;
+        img{
+            width: 100%;
+        }
+    }
 }

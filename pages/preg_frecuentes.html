@@ -5,45 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link type="text/css" rel="stylesheet" href="../css/styles.css">
     <title>Preguntas Frecuentes | Como en casa</title>
 </head>
 <body><!-- Segun el balsamiq que arme esto iria en dos cuadrados. -->
     <!-- No se como hacer que el cuadrado ocupe solo el tamaño de lo que escribi -->
-    <nav class="topbar">
-        <ul class="topbar__list">
-            <li>
-                <div class="topbar__logo">
-                    <img src="../Multimedia/Logo/Diseño_sin_título-removebg-preview.png" alt="">
-                </div>
-            </li>
-            <li>
-                <div class="topbar__seccion">
-                    <a href="../index.html" class=""><i class='bx bx-home' ></i>Inicio</a>
-                </div>
-            </li>
-            <li>
-                <div class="topbar__seccion">
-                <a href="../pages/menu.html" class=""><i class='bx bx-food-menu'></i>Menu</a>    
-                </div>
-            </li>
-            <li>
-                <div class="topbar__seccion">
-                    <a href="../pages/quienes_somos.html" class=""><i class='bx bxs-user-circle'></i>Quienes Somos</a>    
-                </div>
-            </li>
-            <li>
-                <div class="topbar__seccion">
-                    <a href="../pages/preg_frecuentes.html" class=""><i class='bx bx-question-mark' ></i>Preguntas Frecuentes</a>
-                </div>
-            </li>
-            <li>
-                <div class="topbar__seccion">
-                    <a href="../pages/contacto.html" class=""><i class='bx bxs-comment-detail'></i>Contacto</a>
-                </div>
-            </li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Como en Casa</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Inicio<span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/quienes_somos.html">Quienes somos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/menu.html">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-item nav-link active" href="/pages/preg_frecuentes.html">Preguntas frecuentes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </div>
     </nav>
     <main>
         <div class="preguntas">
@@ -52,7 +44,7 @@
                     <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#Pregunta_1" aria-expanded="false" aria-controls="collapseWidthExample">
                         Hace cuanto tiempo brindamos servicios?
                     </button>
-                  </p>
+                </p>
                 <div style="min-height: 120px;">
                     <div class="collapse collapse-horizontal" id="Pregunta_1">
                         <div class="card card-body" style="width: 400px;">
@@ -90,7 +82,7 @@
                     Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
                 </div>
             </div>
-            <section class="preguntas__mapa">
+            <section class="mapa">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d838.5281193742484!2d-57.52832312017186!3d-38.02181651466941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584dc4ad9d09477%3A0x2589945948905907!2sRP11%204907%2C%20B7600JWJ%20Mar%20del%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1625924914104!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </section>
         </div>    
@@ -100,10 +92,12 @@
             <li><i class='bx bx-share-alt' ></i>Nuestras Redes!</li>
             <li><i class='bx bxl-facebook-circle'></i>Facebook</li>
             <li><i class='bx bxl-instagram'></i>Instagram</li>
-            <li><i class='bx bxl-whatsapp'></i>2266489025</li>
+            <li><i class='bx bxl-whatsapp'></i>Whatsapp</li>
             <li>PedidosYa</li>
         </ul>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
 </body>
 </html>
