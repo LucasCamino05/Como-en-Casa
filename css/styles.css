@@ -10,7 +10,7 @@
       background-color: black;
       width: 100%; }
     .preguntas .mapa {
-      border: 3px solid;
+      border: none;
       width: 100%; } }
 
 body {
@@ -47,7 +47,7 @@ footer {
 .combos {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding: 3rem 0 5rem 0; }
   .combos article {
     display: flex;
@@ -66,7 +66,13 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  padding: 5rem 0 5rem 0; }
+  padding: 5rem 0 5rem 0;
+  box-sizing: border-box;
+  box-shadow: 0 2px 4px black;
+  /*  img:hover {
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2); } */ }
   .productos article {
     text-align: center; }
     .productos article div {
@@ -81,10 +87,6 @@ footer {
     height: 20rem;
     transition: 0.4s;
     transition-timing-function: linear; }
-  .productos img:hover {
-    -webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.2); }
 
 /* botones de agregar al carrito */
 button {
@@ -158,3 +160,24 @@ button {
     margin: 0; }
     .quienesSomos .lugar img {
       width: 100%; }
+
+/* inicio Contacto */
+.formulario {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  text-align: center;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 4px black; }
+  .formulario .datos {
+    padding: 0 2rem; }
+    .formulario .datos div {
+      padding: 1rem; }
+      .formulario .datos div input {
+        border: 2px solid; }

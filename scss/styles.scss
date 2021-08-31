@@ -15,8 +15,9 @@
             width: 100%;
         }
         .mapa{
-            border: 3px solid;  
-            width: 100%;  
+            border: none;  
+            width: 100%;
+
         }
     }
 }
@@ -34,7 +35,6 @@ body{
     z-index: 1;
     align-content: center;
     justify-items: center;
-
 }
 footer{
     position: fixed;
@@ -60,7 +60,7 @@ footer{
 .combos{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: $padding_combo;
     article{
         display: flex;
@@ -85,6 +85,8 @@ footer{
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding: $padding_menu;
+    box-sizing: border-box;
+    box-shadow:0 2px 4px rgba(0, 0, 0, 1);
     article{
         text-align: center;
         div{
@@ -102,10 +104,10 @@ footer{
         transition: 0.4s;
         transition-timing-function: linear;
     }
-    img:hover {
+   /*  img:hover {
         -webkit-transform: scale(1.2);
         -ms-transform: scale(1.2);
-        transform: scale(1.2); }
+        transform: scale(1.2); } */
 }
 /* botones de agregar al carrito */
 button{
@@ -162,7 +164,7 @@ button{
         width: 400px;
     }
     .mapa{
-        border: 3px solid;    
+        border: 3px solid; 
     }
 }
 
@@ -185,6 +187,29 @@ button{
         margin: 0;
         img{
             width: 100%;
+        }
+    }
+}
+/* inicio Contacto */
+.formulario{
+    position: absolute;
+    top: 25%; left: 25%;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: $padding_contacto;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 4px rgb(0, 0, 0);
+    .datos{
+        padding: $padding_contacto;
+        div{
+            padding: 1rem;
+        input{
+            border: 2px solid;
+            }
         }
     }
 }
