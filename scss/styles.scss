@@ -27,7 +27,7 @@ body{
     width: 100%;
     height: 100%;
     box-sizing: border-box;
-    background-color: beige;
+    background-color: rgb(245, 245, 220);
 }
 .navbar{
     position: fixed;
@@ -40,9 +40,10 @@ footer{
     position: fixed;
     bottom: 0;
     width: 100%;
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 10px;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
+    z-index: 1;
     ul{
         display: flex;
         justify-content: space-evenly;
@@ -111,46 +112,14 @@ footer{
 }
 /* botones de agregar al carrito */
 button{
-    background-color:black;
+    background-color:rgb(0, 0, 0);
     border: 0;
     border-radius:5px;
     box-shadow:0 2px 4px rgba(0, 0, 0, 1);
-    color: white;
+    color: rgb(255, 255, 255);
     font-size:1rem;
     padding:10px 25px;
-    }
-  .model-container{
-    opacity:0;
-    pointer-events: none;
-    background-color:rgba(0,0,0,0.3);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position:fixed;
-    top:0;
-    left:0;
-    height: 100vh;
-    width:100vw;
-   }
-  .model-container.show{
-    pointer-events: auto;
-    opacity:1;
-    }
-  .modal{
-    background-color: #fff;
-    padding:30px;
-    border-radius:5px;
-    box-shadow:0 2px 4px rgba(0, 0, 0, 1);
-    width:600px;
-    max-width:100%;
-    text-align:center;
-    }
-  .modal h1{
-    margin:0;
-    }
-  .modal p{
-    font-size:14px;
-    }
+}
 /* los botones no funcionan, hice exactamente lo mismo que en el video que me pasaste y no logre hacer que funcione */
 /* Fin de boton agregar al carrito */
 /* preguntas */
@@ -160,13 +129,14 @@ button{
     display: flex;
     justify-content: space-around;
     .btn{
-        background-color: black;
+        background-color: rgb(0, 0, 0);
         width: 400px;
     }
     .mapa{
         border: 3px solid; 
     }
 }
+
 
 /* Quienes Somos */
 
