@@ -42,29 +42,31 @@
         <div>
             <h1>Escribinos!</h1>
         </div>
-        <div class="form-row">
-            <div class="form-group col-md-4">
-                <label for="nombre">Nombre</label>
-                <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+        <div>
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+                </div>
+                <div class="form-group col-md-5">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" class="form-control" id="apellido" placeholder="Apellido">
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="edad">Edad</label>
+                    <input type="number" class="form-control" id="edad" placeholder="Edad">
+                </div>
             </div>
-            <div class="form-group col-md-5">
-                <label for="apellido">Apellido</label>
-                <input type="text" class="form-control" id="apellido" placeholder="Apellido">
+            <div class="form-group">
+                <label for="inputAddress">Email</label>
+                <input type="email" class="form-control" id="inputAddress" placeholder="email@gmail.com">
             </div>
-            <div class="form-group col-md-3">
-                <label for="edad">Edad</label>
-                <input type="number" class="form-control" id="edad" placeholder="Edad">
+            <div class="form-group">
+                <label for="inputAddress2">Contanos sobre vos</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Cuales son tus gustos?">
             </div>
         </div>
-        <div class="form-group">
-            <label for="inputAddress">Email</label>
-            <input type="email" class="form-control" id="inputAddress" placeholder="email@gmail.com">
-        </div>
-        <div class="form-group">
-            <label for="inputAddress2">Contanos sobre vos</label>
-            <input type="text" class="form-control" id="inputAddress2" placeholder="Cuales son tus gustos?">
-        </div>
-        <button type="submit" class="btn btn-dark" onclick="miFunc()">Enviar</button>
+            <button type="submit" class="btn btn-dark" onclick="miFunc()">Enviar</button>
     </form>
     <footer>
         <ul>
@@ -72,7 +74,10 @@
             <li><i class='bx bxl-facebook-circle'></i>Facebook</li>
             <li><i class='bx bxl-instagram'></i>Instagram</li>
             <li><i class='bx bxl-whatsapp'></i>Whatsapp</li>
-            <li>PedidosYa</li>
+            <li>
+                <div>Email de Contacto</div>
+                <div class="mail">comoencasa@asd.com</div>
+            </li>
         </ul>
     </footer>
     

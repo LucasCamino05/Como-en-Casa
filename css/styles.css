@@ -14,11 +14,46 @@
     align-items: center;
     flex-direction: column; }
     .preguntas .btn {
-      background-color: black;
       width: 100%; }
     .preguntas .mapa {
-      border: none;
-      width: 100%; } }
+      display: none; }
+  .productos {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 5rem 0 10rem 0; }
+    .productos .comida {
+      text-align: center;
+      display: flex;
+      flex-direction: column; }
+      .productos .comida div {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+      .productos .comida img {
+        width: 30rem;
+        height: 20rem; }
+      .productos .comida article {
+        flex-direction: column; }
+        .productos .comida article .descripcion {
+          width: 100px; }
+    .productos .titulo {
+      color: black;
+      text-align: center;
+      margin: 0;
+      padding: 0 0 10px;
+      width: 90%;
+      border-bottom: 2px solid black; }
+    .productos .subtitulo {
+      color: black;
+      text-align: center;
+      margin: 0;
+      padding: 10px;
+      margin: 10px;
+      width: 100%;
+      border-bottom: 2px solid black; } }
 
 body {
   margin: 0;
@@ -76,49 +111,50 @@ footer {
 /* Menu */
 .productos {
   display: flex;
+  align-items: center;
+  flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  padding: 5rem 0 5rem 0;
-  box-sizing: border-box;
-  box-shadow: 0 2px 4px black;
-  /*  img:hover {
-        -webkit-transform: scale(1.2);
-        -ms-transform: scale(1.2);
-        transform: scale(1.2); } */ }
-  .productos article {
-    text-align: center; }
-    .productos article div {
-      padding: 1rem;
+  padding: 5rem 0 10rem 0; }
+  .productos .comida {
+    text-align: center;
+    display: flex;
+    flex-direction: column; }
+    .productos .comida article {
       display: flex;
-      flex-direction: column;
-      align-items: center; }
-  .productos img {
-    border: 1px solid;
-    border-radius: 10rem;
-    width: 30rem;
-    height: 20rem;
-    transition: 0.4s;
-    transition-timing-function: linear; }
+      justify-content: space-between; }
+      .productos .comida article div {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        .productos .comida article div .descripcion {
+          width: 200px; }
+      .productos .comida article img {
+        width: 30rem;
+        height: 20rem;
+        padding: 10px; }
+  .productos .titulo {
+    color: black;
+    text-align: center;
+    margin: 0;
+    padding: 0 0 10px;
+    width: 90%;
+    border-bottom: 2px solid black; }
+  .productos .subtitulo {
+    color: black;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
+    border-bottom: 2px solid black; }
 
-/* botones de agregar al carrito */
-button {
-  background-color: black;
-  border: 0;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px black;
-  color: white;
-  font-size: 1rem;
-  padding: 10px 25px; }
-
-/* los botones no funcionan, hice exactamente lo mismo que en el video que me pasaste y no logre hacer que funcione */
-/* Fin de boton agregar al carrito */
 /* preguntas */
 .preguntas {
-  padding-top: 75px;
+  padding-top: 9rem;
   display: flex;
   justify-content: space-around; }
   .preguntas .btn {
-    background-color: black;
     width: 400px; }
   .preguntas .mapa {
     border: 3px solid; }
@@ -129,9 +165,7 @@ button {
   flex-wrap: wrap;
   align-content: center;
   justify-content: space-evenly;
-  padding: 5rem 0 5rem 0; }
-  .quienesSomos .animate_animated {
-    --animate-duration: 800ms; }
+  padding: 5rem 0 10rem 0; }
   .quienesSomos .nosotros {
     text-align: center;
     margin: 1rem;
