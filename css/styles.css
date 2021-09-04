@@ -95,7 +95,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  padding: 3rem 0 5rem 0; }
+  padding: 3rem 0 8rem 0; }
   .combos article {
     display: flex;
     flex-direction: column;
@@ -150,14 +150,20 @@ footer {
     border-bottom: 2px solid black; }
 
 /* preguntas */
+.tituloPreguntas {
+  padding: 6rem 0 5rem 0;
+  color: black;
+  text-align: center; }
+
 .preguntas {
-  padding-top: 9rem;
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-around;
+  margin: 0 0 8rem 0; }
   .preguntas .btn {
     width: 400px; }
   .preguntas .mapa {
-    border: 3px solid; }
+    border: 3px solid;
+    height: fit-content; }
 
 /* Quienes Somos */
 .quienesSomos {

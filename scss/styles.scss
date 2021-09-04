@@ -188,15 +188,21 @@ footer{
 }
 /* preguntas */
 
+.tituloPreguntas{
+    padding:$padding_preguntas;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
 .preguntas{
-    padding-top: 9rem;
     display: flex;
     justify-content: space-around;
+    margin:$padding_preguntas_footer;
     .btn{
         width: 400px;
     }
     .mapa{
-        border: 3px solid; 
+        border: 3px solid;
+        height: fit-content;
     }
 }
 
