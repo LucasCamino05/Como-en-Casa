@@ -1,6 +1,13 @@
 @media screen and (max-width: 768px) {
   footer {
-    display: none; }
+    z-index: 3; }
+    footer ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0; }
+  .quienesSomos img {
+    padding-bottom: 5rem; }
   .preguntas {
     padding-top: 75px;
     display: flex;
@@ -40,6 +47,10 @@ footer {
     display: flex;
     justify-content: space-evenly;
     list-style: none; }
+  footer li {
+    text-align: center; }
+  footer .mail {
+    color: #857d7d; }
 
 /* Inicio */
 .carousel img {
@@ -119,34 +130,26 @@ button {
   align-content: center;
   justify-content: space-evenly;
   padding: 5rem 0 5rem 0; }
+  .quienesSomos .animate_animated {
+    --animate-duration: 800ms; }
   .quienesSomos .nosotros {
     text-align: center;
-    border: 1px solid;
+    margin: 1rem;
     width: 900px; }
   .quienesSomos .lugar {
-    border: 2px solid;
+    box-shadow: black;
     padding: 0;
     margin: 0; }
     .quienesSomos .lugar img {
       width: 100%; }
 
 /* inicio Contacto */
-.formulario {
-  position: absolute;
-  top: 25%;
-  left: 25%;
-  text-align: center;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 0 2rem;
-  display: flex;
-  flex-wrap: wrap;
-  border: 1px solid;
-  box-sizing: border-box;
-  box-shadow: 2px 2px 4px black; }
-  .formulario .datos {
-    padding: 0 2rem; }
-    .formulario .datos div {
-      padding: 1rem; }
-      .formulario .datos div input {
-        border: 2px solid; }
+form {
+  padding: 6rem;
+  padding-bottom: 11rem;
+  text-align: center; }
+  form .form-control {
+    border-color: black;
+    border-radius: 10rem; }
+  form div {
+    padding: 1rem; }

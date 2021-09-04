@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO Keywords -->
+    <meta name="keywords"  content="COMIDA,COMIDARAPIDA,ENVIOS,RESTAURANT,CASERO,EVENTOS,GASTRONOMIADEALTONIVEL">
+    <!-- SEO Descripción -->
+    <meta name="description" content="Pagina de contacto para que todo aquel que quiera ser parte del proyecto pueda contactarnos">
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">    <link type="text/css" rel="stylesheet" href="../css/styles.css">
     <title>Contacto | Como en casa</title>
@@ -35,53 +39,32 @@
         </div>
     </nav>
     <form>
-        <main class="formulario">
-            <div>
-                <h2>Contactanos</h2>
-                <h3>llena el formulario</h3>
+        <div>
+            <h1>Escribinos!</h1>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label for="nombre">Nombre</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Nombre">
             </div>
-            <div class="datos">
-                <div><!-- Pregunta sobre nombre y lugar para completarlo -->
-                    <label for="Nombre">Nombre Completo</label> 
-                    <br>
-                    <input type="text" name="Nombre">
-                </div>
-                <div><!-- Pregunta sobre la Edad que tiene el postulante -->
-                    <label for="Edad">Edad</label>
-                    <br>
-                    <input type="number" name="Edad">
-                </div>
-                <div><!-- email de contacto con el postulante -->
-                    <label for="Email">Email de contacto</label>
-                    <br>
-                    <input type="email" name="Email">
-                </div>
-                <div><!-- Numero de telefono para contacto -->
-                    <label for="Numero-telefono">Numero de contacto</label>
-                    <br>
-                    <input type="text/number" name="Numero-telefono">
-                </div>
-                <div><!-- horarios que dispone -->
-                    <label for="Horario">Disponibilidad horaria</label>
-                    <br>
-                    <select>
-                        <option value="Full Time">Tiempo Completo</option>
-                        <option value="Part Time">Medio tiempo</option>
-                    </select>
-                </div>
+            <div class="form-group col-md-5">
+                <label for="apellido">Apellido</label>
+                <input type="text" class="form-control" id="apellido" placeholder="Apellido">
             </div>
-            <div class="formulario__textos">
-                <div><!-- Una breve descripcion sobre el -->
-                    <label for="Descripcion">Contanos sobre vos</label>
-                    <br>
-                    <textarea name="Descripcion" cols="30" rows="10"></textarea>
-                </div>
-                <div>
-                    <label for="Listo">Enviar</label>
-                    <input type="submit" name="Listo">
-                </div>
+            <div class="form-group col-md-3">
+                <label for="edad">Edad</label>
+                <input type="number" class="form-control" id="edad" placeholder="Edad">
             </div>
-        </main>
+        </div>
+        <div class="form-group">
+            <label for="inputAddress">Email</label>
+            <input type="email" class="form-control" id="inputAddress" placeholder="email@gmail.com">
+        </div>
+        <div class="form-group">
+            <label for="inputAddress2">Contanos sobre vos</label>
+            <input type="text" class="form-control" id="inputAddress2" placeholder="Cuales son tus gustos?">
+        </div>
+        <button type="submit" class="btn btn-dark" onclick="miFunc()">Enviar</button>
     </form>
     <footer>
         <ul>
@@ -92,8 +75,15 @@
             <li>PedidosYa</li>
         </ul>
     </footer>
+    
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script>
+    function miFunc() {
+        alert('Se envio con exito');
+    }
+    </script>
 </body>
 </html>
