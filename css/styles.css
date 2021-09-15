@@ -1,18 +1,25 @@
+@charset "UTF-8";
 @media screen and (max-width: 768px) {
   footer {
+    width: 100%;
     z-index: 3; }
     footer ul {
       display: flex;
       flex-direction: column;
       align-items: center;
       padding: 0; }
-  .quienesSomos img {
-    padding-bottom: 5rem; }
+  .quienesSomos {
+    margin-bottom: 2rem; }
+    .quienesSomos .nosotros {
+      width: 100%; }
+    .quienesSomos img {
+      width: 100%; }
   .preguntas {
     padding-top: 75px;
     display: flex;
     align-items: center;
-    flex-direction: column; }
+    flex-direction: column;
+    margin-bottom: 5rem; }
     .preguntas .btn {
       width: 100%; }
     .preguntas .mapa {
@@ -22,7 +29,9 @@
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
-    padding: 5rem 0 10rem 0; }
+    padding: 5rem 0 10rem 0;
+    width: 100%;
+    margin-bottom: 50px; }
     .productos .comida {
       text-align: center;
       display: flex;
@@ -31,14 +40,18 @@
         padding: 1rem;
         display: flex;
         flex-direction: column;
-        align-items: center; }
+        align-items: center;
+        width: 90%; }
       .productos .comida img {
-        width: 30rem;
+        width: 100%;
         height: 20rem; }
       .productos .comida article {
-        flex-direction: column; }
-        .productos .comida article .descripcion {
-          width: 100px; }
+        flex-direction: column;
+        align-items: center;
+        width: 100%; }
+      .productos .comida .descripcion {
+        width: 100%;
+        height: fit-content; }
     .productos .titulo {
       color: black;
       text-align: center;
@@ -53,7 +66,9 @@
       padding: 10px;
       margin: 10px;
       width: 100%;
-      border-bottom: 2px solid black; } }
+      border-bottom: 2px solid black; }
+  form {
+    margin-bottom: 5rem; } }
 
 body {
   margin: 0;
@@ -101,64 +116,72 @@ footer {
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center; }
-    .combos article .circulo {
-      border: 1px solid;
-      border-radius: 10rem; }
     .combos article img {
       width: 100%;
-      height: 20rem; }
+      height: 5rem; }
 
 /* Menu */
 .productos {
   display: flex;
-  align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
+  align-content: center;
   padding: 5rem 0 10rem 0; }
   .productos .comida {
-    text-align: center;
     display: flex;
     flex-direction: column; }
     .productos .comida article {
       display: flex;
-      justify-content: space-between; }
+      justify-content: space-around; }
       .productos .comida article div {
         padding: 1rem;
         display: flex;
         flex-direction: column;
-        align-items: center; }
+        align-items: center;
+        border: black solid;
+        height: 20rem;
+        margin: 5px; }
         .productos .comida article div .descripcion {
-          width: 200px; }
+          width: 100%;
+          border: none;
+          object-fit: contain;
+          height: 10rem; }
+        .productos .comida article div .añadirAlCarrito {
+          border: none; }
       .productos .comida article img {
         width: 30rem;
         height: 20rem;
-        padding: 10px; }
+        padding: 2px;
+        margin: 5px;
+        border: 2px solid;
+        border-color: rgb 0, 0, 0; }
   .productos .titulo {
     color: black;
     text-align: center;
+    align-items: center;
     margin: 0;
     padding: 0 0 10px;
     width: 90%;
     border-bottom: 2px solid black; }
   .productos .subtitulo {
     color: black;
-    text-align: center;
+    align-items: center;
     margin: 0;
     padding: 10px;
     margin: 10px;
-    width: 100%;
+    width: 90%;
     border-bottom: 2px solid black; }
 
 /* preguntas */
 .tituloPreguntas {
-  padding: 6rem 0 5rem 0;
+  padding: 6rem 0 1rem 0;
   color: black;
   text-align: center; }
 
 .preguntas {
   display: flex;
   justify-content: space-around;
-  margin: 0 0 8rem 0; }
+  margin: 0 0 10rem 0; }
   .preguntas .btn {
     width: 400px; }
   .preguntas .mapa {
@@ -168,17 +191,17 @@ footer {
 /* Quienes Somos */
 .quienesSomos {
   display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
   padding: 5rem 0 10rem 0; }
   .quienesSomos .nosotros {
     text-align: center;
     margin: 1rem;
-    width: 900px; }
+    width: 100%; }
   .quienesSomos .lugar {
     box-shadow: black;
     padding: 0;
+    text-align: center;
     margin: 0; }
     .quienesSomos .lugar img {
       width: 100%; }

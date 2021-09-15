@@ -1,10 +1,6 @@
-$ancho: 3*10rem;
+$anchoComida: 30rem;
 
-$alto: 2*10rem;
-
-$anchoComida: $ancho;
-
-$altoComida: $alto;
+$altoComida: 20rem;
 
 $padding_combo:3rem 0 8rem 0;
 
@@ -12,5 +8,6 @@ $padding_menu:5rem 0 10rem 0;
 
 $padding_contacto:0 5rem 0 5rem;
 
-$padding_preguntas: 6rem 0 5rem 0;
-$padding_preguntas_footer: 0 0 8rem 0;
+$padding_preguntas: 6rem 0 1rem 0;
+
+$padding_preguntas_footer: 0 0 10rem 0;

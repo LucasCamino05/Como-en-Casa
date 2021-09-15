@@ -2,6 +2,7 @@
 
 @media screen and (max-width: 768px){
     footer{
+        width: 100%;
         z-index: 3;
         ul{
             display: flex;
@@ -11,8 +12,12 @@
         }
     }
     .quienesSomos{
-            img{
-                padding-bottom: 5rem;
+        margin-bottom: 2rem;
+        .nosotros{
+            width: 100%;
+        }
+        img{
+            width: 100%;
         }
     }
     .preguntas{
@@ -20,6 +25,7 @@
         display: flex;
         align-items: center;
         flex-direction: column;
+        margin-bottom: 5rem;
         .btn{
             width: 100%;
         }
@@ -27,12 +33,15 @@
             display: none;
         }
     }
+
     .productos{
         display: flex;
         align-items: center;
         flex-direction: column;
         flex-wrap: wrap;
         padding: $padding_menu;
+        width: 100%;
+        margin-bottom: 50px;
         .comida{
             text-align: center;
             display: flex;
@@ -42,16 +51,20 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                width: 90%;
             }
             img{
-                width: $anchoComida;
+                width: 100%;
                 height: $altoComida;
             }
             article{
                 flex-direction: column;
-                .descripcion{
-                    width: 100px;
-                }
+                align-items: center;
+                width: 100%;
+            }
+            .descripcion{
+                width: 100%;
+                height: fit-content;
             }
         }
         .titulo{
@@ -71,6 +84,9 @@
             width: 100%;
             border-bottom: 2px solid rgb(0,0,0);
         }
+    }
+    form{
+        margin-bottom: 5rem;
     }
 }
 body{
@@ -126,13 +142,9 @@ footer{
         flex-direction: column;
         flex-wrap: wrap;
         align-items: center;
-        .circulo{
-            border: 1px solid;
-            border-radius: 10rem;
-        }
         img{
             width: 100%;
-            height: $altoComida;
+            height: 5rem;
         }
     }
 }
@@ -141,36 +153,48 @@ footer{
 
 .productos{
     display: flex;
-    align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
+    align-content: center;
     padding: $padding_menu;
     .comida{
-        text-align: center;
         display: flex;
         flex-direction: column;
         article{
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             div{
                 padding: 1rem;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                border: rgb(0, 0, 0) solid;
+                height: $altoComida;
+                margin: 5px;
                 .descripcion{
-                    width: 200px;
+                    width: 100%;
+                    border: none;
+                    object-fit: contain;
+                    height: 10rem;
+                }
+                .añadirAlCarrito{
+                    border: none;
                 }
             }
             img{
-                width: $anchoComida;
-                height: $altoComida;
-                padding: 10px;
+                width: 30rem;
+                height: 20rem;
+                padding: 2px;
+                margin: 5px;
+                border: 2px solid;
+	            border-color: rgb (0,0,0);
             }
         }
     }
     .titulo{
         color: rgb(0,0,0);
         text-align: center;
+        align-items: center;
         margin: 0;
         padding: 0 0 10px;
         width: 90%;
@@ -178,11 +202,11 @@ footer{
     }
     .subtitulo{
         color: rgb(0,0,0);
-        text-align: center;
+        align-items: center;
         margin: 0;
         padding:10px;
         margin: 10px;
-        width: 100%;
+        width: 90%;
         border-bottom: 2px solid rgb(0,0,0);
     }
 }
@@ -211,18 +235,18 @@ footer{
 
 .quienesSomos{
     display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
     padding: $padding_menu;
     .nosotros{
         text-align: center;
         margin: 1rem;
-        width: 900px;
+        width: 100%;
     }
     .lugar{
         box-shadow: rgba(0, 0, 0, 1);
         padding: 0;
+        text-align: center;
         margin: 0;
         img{
             width: 100%;
