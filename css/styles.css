@@ -1,4 +1,152 @@
 @charset "UTF-8";
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: beige; }
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  align-content: center;
+  justify-items: center; }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  padding: 10px;
+  background-color: black;
+  z-index: 1; }
+  footer ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none; }
+  footer li {
+    text-align: center; }
+  footer .mail {
+    color: #857d7d; }
+
+/* Inicio */
+.carousel img {
+  height: 40rem; }
+
+.promos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 3rem 0 8rem 0; }
+  .promos article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px; }
+    .promos article div {
+      text-align: center; }
+    .promos article img {
+      width: 100%;
+      height: 15rem;
+      border: black solid;
+      border-radius: 1rem; }
+
+/* Menu */
+.productos {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  padding: 5rem 0 10rem 0; }
+  .productos .comida {
+    display: flex;
+    flex-direction: column; }
+    .productos .comida article {
+      display: flex;
+      justify-content: space-around; }
+      .productos .comida article div {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 20rem;
+        width: 640px;
+        margin: 5px; }
+        .productos .comida article div .descripcion {
+          width: 100%;
+          border: none;
+          object-fit: contain;
+          height: 10rem; }
+        .productos .comida article div .añadirAlCarrito {
+          border: none; }
+      .productos .comida article .comida_foto {
+        width: 30rem;
+        height: 20rem;
+        padding: 2px;
+        margin: 5px; }
+  .productos .titulo {
+    color: black;
+    text-align: center;
+    align-items: center;
+    margin: 0;
+    padding: 0 0 10px;
+    width: 90%;
+    border-bottom: 2px solid; }
+  .productos .subtitulo {
+    color: black;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    width: 90%;
+    border-bottom: 2px solid; }
+
+/* preguntas */
+.tituloPreguntas {
+  padding: 6rem 0 1rem 0;
+  color: black;
+  text-align: center; }
+
+.preguntas {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 0 10rem 0; }
+  .preguntas .btn {
+    width: 400px; }
+  .preguntas .mapa {
+    border: 3px solid;
+    height: fit-content; }
+
+/* Quienes Somos */
+.quienesSomos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem 0 10rem 0; }
+  .quienesSomos .nosotros {
+    text-align: center;
+    margin: 1rem;
+    width: 100%; }
+  .quienesSomos .lugar {
+    box-shadow: black;
+    padding: 0;
+    text-align: center;
+    margin: 0; }
+    .quienesSomos .lugar .lugar_img {
+      width: 100%; }
+
+/* inicio Contacto */
+form {
+  padding: 6rem;
+  padding-bottom: 11rem;
+  text-align: center; }
+  form .form-control {
+    border-color: black;
+    border-radius: 10rem; }
+  form div {
+    padding: 1rem; }
+
 @media screen and (max-width: 768px) {
   footer {
     width: 100%;
@@ -69,150 +217,3 @@
       border-bottom: 2px solid black; }
   form {
     margin-bottom: 5rem; } }
-
-body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  box-sizing: border-box;
-  background-color: beige; }
-
-.navbar {
-  position: fixed;
-  width: 100%;
-  z-index: 1;
-  align-content: center;
-  justify-items: center; }
-
-footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  color: white;
-  padding: 10px;
-  background-color: black;
-  z-index: 1; }
-  footer ul {
-    display: flex;
-    justify-content: space-evenly;
-    list-style: none; }
-  footer li {
-    text-align: center; }
-  footer .mail {
-    color: #857d7d; }
-
-/* Inicio */
-.carousel img {
-  height: 40rem; }
-
-.combos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  padding: 3rem 0 8rem 0; }
-  .combos article {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center; }
-    .combos article img {
-      width: 100%;
-      height: 5rem; }
-
-/* Menu */
-.productos {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: center;
-  padding: 5rem 0 10rem 0; }
-  .productos .comida {
-    display: flex;
-    flex-direction: column; }
-    .productos .comida article {
-      display: flex;
-      justify-content: space-around; }
-      .productos .comida article div {
-        padding: 1rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        border: black solid;
-        height: 20rem;
-        margin: 5px; }
-        .productos .comida article div .descripcion {
-          width: 100%;
-          border: none;
-          object-fit: contain;
-          height: 10rem; }
-        .productos .comida article div .añadirAlCarrito {
-          border: none; }
-      .productos .comida article img {
-        width: 30rem;
-        height: 20rem;
-        padding: 2px;
-        margin: 5px;
-        border: 2px solid;
-        border-color: rgb 0, 0, 0; }
-  .productos .titulo {
-    color: black;
-    text-align: center;
-    align-items: center;
-    margin: 0;
-    padding: 0 0 10px;
-    width: 90%;
-    border-bottom: 2px solid black; }
-  .productos .subtitulo {
-    color: black;
-    align-items: center;
-    margin: 0;
-    padding: 10px;
-    margin: 10px;
-    width: 90%;
-    border-bottom: 2px solid black; }
-
-/* preguntas */
-.tituloPreguntas {
-  padding: 6rem 0 1rem 0;
-  color: black;
-  text-align: center; }
-
-.preguntas {
-  display: flex;
-  justify-content: space-around;
-  margin: 0 0 10rem 0; }
-  .preguntas .btn {
-    width: 400px; }
-  .preguntas .mapa {
-    border: 3px solid;
-    height: fit-content; }
-
-/* Quienes Somos */
-.quienesSomos {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 5rem 0 10rem 0; }
-  .quienesSomos .nosotros {
-    text-align: center;
-    margin: 1rem;
-    width: 100%; }
-  .quienesSomos .lugar {
-    box-shadow: black;
-    padding: 0;
-    text-align: center;
-    margin: 0; }
-    .quienesSomos .lugar img {
-      width: 100%; }
-
-/* inicio Contacto */
-form {
-  padding: 6rem;
-  padding-bottom: 11rem;
-  text-align: center; }
-  form .form-control {
-    border-color: black;
-    border-radius: 10rem; }
-  form div {
-    padding: 1rem; }
