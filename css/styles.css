@@ -36,21 +36,23 @@ footer {
   height: 40rem; }
 
 .promos {
+  background-color: #afafaf;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
   padding: 3rem 0 8rem 0; }
   .promos article {
-    display: flex;
     padding: 1rem;
-    justify-content: space-evenly;
+    display: flex;
     align-items: center; }
     .promos article div {
       text-align: center;
-      padding: 5px; }
+      padding: 5px;
+      width: 100%; }
+      .promos article div .tituloPromos {
+        text-decoration: underline; }
     .promos article img {
       width: 100%;
-      height: 20rem;
+      height: 25rem;
       border: black solid;
       border-radius: 1rem; }
 
@@ -79,7 +81,7 @@ footer {
           border: none;
           object-fit: contain;
           line-height: 10%; }
-          .productos .comida article div .descripcion h5 {
+          .productos .comida article div .descripcion .tituloComidas {
             padding: 0 0 1rem 0;
             text-align: center;
             text-decoration: underline; }
@@ -129,9 +131,13 @@ footer {
   align-items: center;
   padding: 5rem 0 10rem 0; }
   .quienesSomos .nosotros {
-    text-align: center;
+    text-align: justify;
+    line-height: 10%;
+    padding-left: 2rem;
     margin: 1rem;
     width: 100%; }
+    .quienesSomos .nosotros h2 {
+      text-align: center; }
   .quienesSomos .lugar {
     box-shadow: black;
     padding: 0;
@@ -163,6 +169,7 @@ form {
   .quienesSomos {
     margin-bottom: 2rem; }
     .quienesSomos .nosotros {
+      line-height: 10%;
       width: 100%; }
     .quienesSomos img {
       width: 100%; }
@@ -220,4 +227,16 @@ form {
       width: 100%;
       border-bottom: 2px solid black; }
   form {
-    margin-bottom: 5rem; } }
+    margin-bottom: 5rem; }
+  .promos {
+    display: flex;
+    flex-wrap: wrap; }
+    .promos article {
+      display: flex;
+      flex-direction: column; }
+      .promos article div {
+        padding: 0 0 3rem 0; }
+        .promos article div .tituloPromo {
+          text-decoration: underline; }
+      .promos article img {
+        width: 100%; } }
