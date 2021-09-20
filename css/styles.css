@@ -100,14 +100,6 @@ footer {
         height: 20rem;
         padding: 2px;
         margin: 5px; }
-  .productos .titulo {
-    color: black;
-    text-align: center;
-    align-items: center;
-    margin: 0;
-    padding: 0 0 10px;
-    width: 90%;
-    border-bottom: 2px solid; }
   .productos .subtitulo {
     color: black;
     align-items: center;
@@ -115,6 +107,15 @@ footer {
     margin: 10px;
     width: 90%;
     border-bottom: 2px solid; }
+
+.titulo {
+  color: black;
+  text-align: center;
+  align-items: center;
+  margin: 0;
+  padding: 0 0 10px;
+  width: 100%;
+  border-bottom: 2px solid; }
 
 /* preguntas */
 .tituloPreguntas {
@@ -138,21 +139,27 @@ footer {
   flex-direction: column;
   align-items: center;
   padding: 5rem 0 10rem 0; }
-  .quienesSomos .nosotros {
-    text-align: center;
-    line-height: 10%;
-    padding-left: 2rem;
-    margin: 1rem;
-    width: 100%; }
-    .quienesSomos .nosotros h2 {
-      text-align: center; }
-  .quienesSomos .lugar {
-    box-shadow: black;
-    padding: 0;
-    text-align: center;
-    margin: 0; }
-    .quienesSomos .lugar .lugar_img {
-      width: 100%; }
+  .quienesSomos .contenidoQuienesSomos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .quienesSomos .contenidoQuienesSomos .nosotros {
+      text-align: center;
+      line-height: 110%;
+      padding-left: 2rem;
+      margin: 1rem;
+      width: 100%;
+      height: fit-content; }
+      .quienesSomos .contenidoQuienesSomos .nosotros a {
+        color: black;
+        text-decoration: underline; }
+    .quienesSomos .contenidoQuienesSomos .lugar {
+      box-shadow: black;
+      padding: 0;
+      text-align: center;
+      margin: 0; }
+      .quienesSomos .contenidoQuienesSomos .lugar .lugar_img {
+        width: 100%; }
 
 /* inicio Contacto */
 form {
