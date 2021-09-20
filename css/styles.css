@@ -10,7 +10,7 @@ body {
 .navbar {
   position: fixed;
   width: 100%;
-  z-index: 1;
+  z-index: 2;
   align-content: center;
   justify-items: center; }
 
@@ -33,11 +33,14 @@ footer {
 
 /* Inicio */
 .carousel img {
-  height: 40rem; }
+  width: 100%;
+  height: 50rem;
+  object-fit: cover; }
 
 .promos {
   background-color: #afafaf;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   padding: 3rem 0 8rem 0; }
   .promos article {
@@ -47,9 +50,12 @@ footer {
     .promos article div {
       text-align: center;
       padding: 5px;
-      width: 100%; }
+      width: 100%;
+      line-height: 10%; }
       .promos article div .tituloPromos {
         text-decoration: underline; }
+      .promos article div .promosContenido {
+        text-align: start; }
     .promos article img {
       width: 100%;
       height: 25rem;
@@ -166,6 +172,10 @@ form {
       flex-direction: column;
       align-items: center;
       padding: 0; }
+  .carousel img {
+    border: 5px solid;
+    height: 100%;
+    object-fit: contain; }
   .quienesSomos {
     margin-bottom: 2rem; }
     .quienesSomos .nosotros {
