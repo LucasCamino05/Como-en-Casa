@@ -252,7 +252,7 @@ form{
             }
             img{
                 width: 100%;
-                height: $altoComida;
+                object-fit: fill;
             }
             article{
                 flex-direction: column;

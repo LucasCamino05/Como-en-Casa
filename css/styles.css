@@ -203,7 +203,7 @@ form {
         width: 90%; }
       .productos .comida img {
         width: 100%;
-        height: 20rem; }
+        object-fit: fill; }
       .productos .comida article {
         flex-direction: column;
         align-items: center;
