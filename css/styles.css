@@ -95,6 +95,7 @@ footer {
         .productos .comida article div .añadirAlCarrito {
           border: none; }
       .productos .comida article .comida_foto {
+        object-fit: cover;
         width: 30rem;
         height: 20rem;
         padding: 2px;
