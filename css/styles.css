@@ -93,7 +93,9 @@ footer {
             text-align: center;
             text-decoration: underline; }
         .productos .comida article div .añadirAlCarrito {
-          border: none; }
+          border: none;
+          margin: 0px;
+          padding: 0px; }
       .productos .comida article .comida_foto {
         object-fit: cover;
         width: 30rem;
@@ -197,9 +199,8 @@ form {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 5rem; }
-    .preguntas .btn {
-      width: 100%; }
+    margin-bottom: 15rem;
+    width: 100%; }
     .preguntas .mapa {
       display: none; }
   .productos {

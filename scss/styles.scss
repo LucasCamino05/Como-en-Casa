@@ -111,6 +111,8 @@ footer{
                 }
                 .añadirAlCarrito{
                     border: none;
+                    margin: 0px;
+                    padding: 0px;
                 }
             }
             .comida_foto{
@@ -245,10 +247,8 @@ form{
         display: flex;
         align-items: center;
         flex-direction: column;
-        margin-bottom: 5rem;
-        .btn{
-            width: 100%;
-        }
+        margin-bottom: 15rem;
+        width: 100%;
         .mapa{
             display: none;
         }
