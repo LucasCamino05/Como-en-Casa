@@ -61,7 +61,7 @@ footer {
         display: none; }
     .promos article img {
       width: 100%;
-      height: 25rem;
+      height: 20rem;
       border: black solid;
       border-radius: 1rem; }
 
@@ -267,4 +267,5 @@ form {
         .promos article div .tituloPromo {
           text-decoration: underline; }
       .promos article img {
-        width: 100%; } }
+        width: 100%;
+        height: fit-content; } }
