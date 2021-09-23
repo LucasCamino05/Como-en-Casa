@@ -130,6 +130,7 @@ footer{
     }
     .subtitulo{
         color: rgb(0,0,0);
+        text-align: center;
         align-items: center;
         padding: 10px;
         margin: 10px;
@@ -195,7 +196,7 @@ footer{
             margin: 0;
             .lugar_img{
                 width: 50%;
-                height: 75%;
+                height: 100%;
             }
         }
     }
@@ -264,53 +265,26 @@ form{
 
     .productos{
         display: flex;
-        align-items: center;
         flex-direction: column;
-        flex-wrap: wrap;
-        padding: $padding_menu;
-        width: 100%;
-        margin-bottom: 50px;
+        align-items: center;
         .comida{
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            div{
-                padding: 1rem;
+            article{
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                width: 90%;
+                .comidaDescripcion{
+                    display: flex;
+                    flex-direction: column;
+                    justify-items: center;
+                    align-items: center;
+                    .descripcion{
+                        text-align: center;
+                    }
+                    .añadirAlCarrito{
+                    width: 80%;
+                    }
+                }
             }
-            img{
-                width: 100%;
-                object-fit: fill;
-            }
-            article{
-                flex-direction: column;
-                align-items: center;
-                width: 100%;
-            }
-            .descripcion{
-                width: 100%;
-                height: fit-content;
-            }
-        }
-        .titulo{
-            color: rgb(0,0,0);
-            text-align: center;
-            margin: 0;
-            padding: 0 0 10px;
-            width: 90%;
-            border-bottom: 2px solid rgb(0,0,0);
-        }
-        .subtitulo{
-            color: rgb(0,0,0);
-            text-align: center;
-            margin: 0;
-            padding:10px;
-            margin: 10px;
-            width: 100%;
-            border-bottom: 2px solid rgb(0,0,0);
         }
     }
     form{

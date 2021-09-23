@@ -108,6 +108,7 @@ footer {
         border: black solid; }
   .productos .subtitulo {
     color: black;
+    text-align: center;
     align-items: center;
     padding: 10px;
     margin: 10px;
@@ -165,7 +166,7 @@ footer {
       margin: 0; }
       .quienesSomos .contenidoQuienesSomos .lugar .lugar_img {
         width: 50%;
-        height: 75%; }
+        height: 100%; }
 
 /* inicio Contacto */
 form {
@@ -213,47 +214,21 @@ form {
       display: none; }
   .productos {
     display: flex;
-    align-items: center;
     flex-direction: column;
-    flex-wrap: wrap;
-    padding: 5rem 0 10rem 0;
-    width: 100%;
-    margin-bottom: 50px; }
-    .productos .comida {
-      text-align: center;
+    align-items: center; }
+    .productos .comida article {
       display: flex;
-      flex-direction: column; }
-      .productos .comida div {
-        padding: 1rem;
+      flex-direction: column;
+      align-items: center; }
+      .productos .comida article .comidaDescripcion {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        width: 90%; }
-      .productos .comida img {
-        width: 100%;
-        object-fit: fill; }
-      .productos .comida article {
-        flex-direction: column;
-        align-items: center;
-        width: 100%; }
-      .productos .comida .descripcion {
-        width: 100%;
-        height: fit-content; }
-    .productos .titulo {
-      color: black;
-      text-align: center;
-      margin: 0;
-      padding: 0 0 10px;
-      width: 90%;
-      border-bottom: 2px solid black; }
-    .productos .subtitulo {
-      color: black;
-      text-align: center;
-      margin: 0;
-      padding: 10px;
-      margin: 10px;
-      width: 100%;
-      border-bottom: 2px solid black; }
+        justify-items: center;
+        align-items: center; }
+        .productos .comida article .comidaDescripcion .descripcion {
+          text-align: center; }
+        .productos .comida article .comidaDescripcion .añadirAlCarrito {
+          width: 80%; }
   form {
     margin-bottom: 5rem; }
   .promos {
