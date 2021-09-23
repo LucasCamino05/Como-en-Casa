@@ -57,6 +57,8 @@ footer {
         text-decoration: underline; }
       .promos article div .promosContenido {
         text-align: start; }
+      .promos article div .precios {
+        display: none; }
     .promos article img {
       width: 100%;
       height: 25rem;
@@ -69,7 +71,8 @@ footer {
   flex-direction: column;
   flex-wrap: wrap;
   align-content: center;
-  padding: 5rem 0 10rem 0; }
+  padding: 5rem 0 10rem 0;
+  background-color: #afafaf; }
   .productos .comida {
     display: flex;
     flex-direction: column; }
@@ -101,7 +104,8 @@ footer {
         width: 30rem;
         height: 20rem;
         padding: 2px;
-        margin: 5px; }
+        margin: 5px;
+        border: black solid; }
   .productos .subtitulo {
     color: black;
     align-items: center;

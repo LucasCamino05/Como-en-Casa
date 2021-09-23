@@ -35,7 +35,6 @@ footer{
         color: rgb(133, 125, 125);    
     }
 }
-
 /* Inicio */
 
 .carousel{
@@ -67,6 +66,9 @@ footer{
             .promosContenido{
                 text-align: start;
             }
+            .precios{
+                display: none;
+            }
         }
         img {
             width: 100%;
@@ -85,6 +87,7 @@ footer{
     flex-wrap: wrap;
     align-content: center;
     padding: $padding_menu;
+    background-color: rgb(175, 175, 175);
     .comida{
         display: flex;
         flex-direction: column;
@@ -121,6 +124,7 @@ footer{
                 height: 20rem;
                 padding: 2px;
                 margin: 5px;
+                border: rgb(0, 0, 0) solid;  
             }
         }
     }
