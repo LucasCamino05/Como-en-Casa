@@ -6,7 +6,7 @@ body{
     width: 100%;
     height: 100%;
     box-sizing: border-box;
-    background-color: rgb(245, 245, 220);
+    background-color: rgb(175, 175, 175);
 }
 .navbar{
     position: fixed;
@@ -124,7 +124,7 @@ footer{
                 height: 20rem;
                 padding: 2px;
                 margin: 5px;
-                border: rgb(0, 0, 0) solid;  
+                border: rgb(0, 0, 0) solid;
             }
         }
     }
@@ -190,12 +190,12 @@ footer{
             }
         }
         .lugar{
-            box-shadow: rgba(0, 0, 0, 1);
             padding: 0;
             text-align: center;
             margin: 0;
             .lugar_img{
-                width: 100%;
+                width: 50%;
+                height: 75%;
             }
         }
     }
@@ -214,9 +214,6 @@ form{
 
     }
 }
-
-
-
 
 @media screen and (max-width: 768px){
     footer{
@@ -238,12 +235,19 @@ form{
     }
     .quienesSomos{
         margin-bottom: 2rem;
-        .nosotros{
-            line-height: 10%;
-            width: 100%;
-        }
-        img{
-            width: 100%;
+        .contenidoQuienesSomos{
+            .nosotros{
+                line-height: 100%;
+                width: 100%;
+            }
+            .lugar{
+                padding: 0;
+                text-align: center;
+                margin: 0;
+                .lugar_img{
+                    width: 100%;
+                }
+            }
         }
     }
     .preguntas{

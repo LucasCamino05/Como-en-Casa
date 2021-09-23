@@ -5,7 +5,7 @@ body {
   width: 100%;
   height: 100%;
   box-sizing: border-box;
-  background-color: beige; }
+  background-color: #afafaf; }
 
 .navbar {
   position: fixed;
@@ -160,12 +160,12 @@ footer {
         color: black;
         text-decoration: underline; }
     .quienesSomos .contenidoQuienesSomos .lugar {
-      box-shadow: black;
       padding: 0;
       text-align: center;
       margin: 0; }
       .quienesSomos .contenidoQuienesSomos .lugar .lugar_img {
-        width: 100%; }
+        width: 50%;
+        height: 75%; }
 
 /* inicio Contacto */
 form {
@@ -193,11 +193,15 @@ form {
     object-fit: contain; }
   .quienesSomos {
     margin-bottom: 2rem; }
-    .quienesSomos .nosotros {
-      line-height: 10%;
+    .quienesSomos .contenidoQuienesSomos .nosotros {
+      line-height: 100%;
       width: 100%; }
-    .quienesSomos img {
-      width: 100%; }
+    .quienesSomos .contenidoQuienesSomos .lugar {
+      padding: 0;
+      text-align: center;
+      margin: 0; }
+      .quienesSomos .contenidoQuienesSomos .lugar .lugar_img {
+        width: 100%; }
   .preguntas {
     padding-top: 75px;
     display: flex;
