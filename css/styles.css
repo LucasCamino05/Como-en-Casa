@@ -106,14 +106,6 @@ footer {
         padding: 2px;
         margin: 5px;
         border: black solid; }
-  .productos .subtitulo {
-    color: black;
-    text-align: center;
-    align-items: center;
-    padding: 10px;
-    margin: 10px;
-    width: 90%;
-    border-bottom: 2px solid; }
 
 .titulo {
   color: black;
@@ -122,6 +114,13 @@ footer {
   margin: 0;
   padding: 0 0 10px;
   width: 100%;
+  border-bottom: 2px solid; }
+
+.subtitulo {
+  color: black;
+  text-align: center;
+  width: 100%;
+  padding: 0 1rem 0 1rem;
   border-bottom: 2px solid; }
 
 /* preguntas */
@@ -215,22 +214,35 @@ form {
   .productos {
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    width: 100%; }
     .productos .comida article {
       display: flex;
       flex-direction: column;
-      align-items: center; }
+      align-items: center;
+      margin-bottom: 16px;
+      width: 100%; }
+      .productos .comida article .comida_foto {
+        border: none;
+        margin: 0;
+        padding: 0; }
       .productos .comida article .comidaDescripcion {
         display: flex;
         flex-direction: column;
         justify-items: center;
-        align-items: center; }
+        align-items: center;
+        width: fit-content; }
         .productos .comida article .comidaDescripcion .descripcion {
-          text-align: center; }
+          text-align: center;
+          width: fit-content; }
         .productos .comida article .comidaDescripcion .añadirAlCarrito {
-          width: 80%; }
+          width: fit-content; }
+  .titulo {
+    width: fit-content; }
   form {
     margin-bottom: 5rem; }
+  .footerMenu {
+    display: none; }
   .promos {
     display: flex;
     flex-wrap: wrap; }

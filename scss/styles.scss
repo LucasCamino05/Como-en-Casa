@@ -128,15 +128,6 @@ footer{
             }
         }
     }
-    .subtitulo{
-        color: rgb(0,0,0);
-        text-align: center;
-        align-items: center;
-        padding: 10px;
-        margin: 10px;
-        width: 90%;
-        border-bottom: 2px solid;
-    }
 }
 .titulo{
     color: rgb(0,0,0);
@@ -145,6 +136,13 @@ footer{
     margin: 0;
     padding: 0 0 10px;
     width: 100%;
+    border-bottom: 2px solid;
+}
+.subtitulo{
+    color: rgb(0,0,0);
+    text-align: center;
+    width: 100%;
+    padding:  0 1rem 0 1rem;
     border-bottom: 2px solid;
 }
 /* preguntas */
@@ -267,28 +265,44 @@ form{
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
         .comida{
             article{
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                margin-bottom: 16px;
+                width: 100%;
+                .comida_foto{
+                    border: none;
+                    margin: 0;
+                    padding: 0;
+                }
                 .comidaDescripcion{
                     display: flex;
                     flex-direction: column;
                     justify-items: center;
                     align-items: center;
+                    width: fit-content;
                     .descripcion{
                         text-align: center;
+                        width: fit-content;
                     }
                     .añadirAlCarrito{
-                    width: 80%;
+                    width: fit-content;
                     }
                 }
             }
         }
     }
+    .titulo{
+        width: fit-content;
+    }
     form{
         margin-bottom: 5rem;
+    }
+    .footerMenu{
+        display: none;
     }
     .promos{
         display: flex;
